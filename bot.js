@@ -43,7 +43,7 @@ client.on("message", async message => {
     if (message.member.voiceChannel) {
       message.member.voiceChannel.join()
       .then(connection => { // Connection is an instance of VoiceConnection
-        const dispatcher = connection.playArbitraryInput('https://www.dropbox.com/s/7jzqnz25g1vlaad/watergate2.mp3?dl=1');
+        const dispatcher = connection.playArbitraryInput('');
         dispatcher.setVolume(1.0);
       })
       .catch(console.error);
